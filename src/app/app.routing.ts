@@ -2,19 +2,10 @@ import { Route } from '@angular/router';
 import { AuthGuard } from 'app/core/auth/guards/auth.guard';
 import { NoAuthGuard } from 'app/core/auth/guards/noAuth.guard';
 import { LayoutComponent } from 'app/layout/layout.component';
-import { InitialDataResolver } from 'app/app.resolvers';
-import { ExampleComponent } from './modules/admin/example/example.component';
 
 // @formatter:off
 // tslint:disable:max-line-length
 export const appRoutes: Route[] = [
-
-  // Redirect empty path to '/dashboards/finance'
-  // { path: '', pathMatch: 'full', component: ExampleComponent},
-  {
-    path: '',
-    loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)
-  },
 
   // Redirect signed in user to the '/dashboards/finance'
   { path: 'signed-in-redirect', pathMatch: 'full', redirectTo: 'dashboards/finance' },
@@ -29,6 +20,10 @@ export const appRoutes: Route[] = [
       layout: 'empty'
     },
     children: [
+      {
+        path: '',
+        loadChildren: () => import('app/modules/landing/landing-home/landing-home.module').then(m => m.LandingHomeModule)
+      },
       {
         path: 'confirmation-required',
         loadChildren: () => import('app/modules/auth/confirmation-required/confirmation-required.module').then(m => m.AuthConfirmationRequiredModule)
@@ -83,7 +78,7 @@ export const appRoutes: Route[] = [
     children: [
       {
         path: 'home',
-        loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)
+        loadChildren: () => import('app/modules/landing/landing-home/landing-home.module').then(m => m.LandingHomeModule)
       },
     ]
   },

@@ -2,8 +2,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector     : 'landing-home',
-    templateUrl  : './home.component.html',
-    styleUrls    : ['./home.component.scss'],
+    templateUrl  : './landing-home.component.html',
+    styleUrls    : ['./landing-home.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
 export class LandingHomeComponent
