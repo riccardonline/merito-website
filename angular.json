@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "treo": {
+        "merito": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -141,5 +141,5 @@
             }
         }
     },
-    "defaultProject": "treo"
+    "defaultProject": "merito"
 }
