@@ -17,19 +17,4 @@ export const appRoutes: Route[] = [
       },
     ]
   },
-
-  // Landing routes
-  // {
-  //   path: '',
-  //   component: LayoutComponent,
-  //   data: {
-  //     layout: 'empty'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'home',
-  //       loadChildren: () => import('app/modules/landing/landing-home/landing-home.module').then(m => m.LandingHomeModule)
-  //     },
-  //   ]
-  // },
 ];
