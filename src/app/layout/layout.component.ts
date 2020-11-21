@@ -18,7 +18,7 @@ import { MatRadioChange } from '@angular/material/radio';
 export class LayoutComponent implements OnInit, OnDestroy
 {
     config: AppConfig;
-    layout: Layout;
+    layout: string;
     theme: 'dark' | 'light';
 
     // Private

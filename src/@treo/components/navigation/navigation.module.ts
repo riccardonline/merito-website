@@ -17,7 +17,6 @@ import { TreoVerticalNavigationBasicItemComponent } from '@treo/components/navig
 import { TreoVerticalNavigationCollapsableItemComponent } from '@treo/components/navigation/vertical/components/collapsable/collapsable.component';
 import { TreoVerticalNavigationDividerItemComponent } from '@treo/components/navigation/vertical/components/divider/divider.component';
 import { TreoVerticalNavigationGroupItemComponent } from '@treo/components/navigation/vertical/components/group/group.component';
-import { TreoVerticalNavigationSpacerItemComponent } from '@treo/components/navigation/vertical/components/spacer/spacer.component';
 import { TreoVerticalNavigationComponent } from '@treo/components/navigation/vertical/vertical.component';
 
 @NgModule({
@@ -32,7 +31,6 @@ import { TreoVerticalNavigationComponent } from '@treo/components/navigation/ver
         TreoVerticalNavigationCollapsableItemComponent,
         TreoVerticalNavigationDividerItemComponent,
         TreoVerticalNavigationGroupItemComponent,
-        TreoVerticalNavigationSpacerItemComponent,
         TreoVerticalNavigationComponent
     ],
     imports     : [

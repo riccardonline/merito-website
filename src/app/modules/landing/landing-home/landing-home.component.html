@@ -1,42 +1,19 @@
-
-
 <!-- Wrapper -->
 <div class="wrapper">
 
   <!-- Header -->
   <div class="header">
 
-    <!-- Navigation toggle button -->
-    <button class="navigation-toggle-button"
-            mat-icon-button
-            (click)="toggleNavigation('mainNavigation')">
-      <mat-icon [svgIcon]="'menu'"></mat-icon>
-    </button>
-
-    <!-- Spacer -->
-    <div class="spacer"></div>
-
-<!--    &lt;!&ndash; Search &ndash;&gt;-->
-<!--    <search [appearance]="'bar'"></search>-->
-
-<!--    &lt;!&ndash; Shortcuts &ndash;&gt;-->
-<!--    <shortcuts [shortcuts]="data.shortcuts"></shortcuts>-->
-
-<!--    &lt;!&ndash; Messages &ndash;&gt;-->
-<!--    <messages [messages]="data.messages"></messages>-->
-
   </div>
 
   <!-- Content -->
   <div class="content">
 
-    <div class="flex flex-col items-center justify-center w-full h-full">
-      <div class="flex flex-col items-center max-w-3xl rich-text">
-        <app-core-features></app-core-features>
-        <pricing-modern></pricing-modern>
-      </div>
-    </div>
+    <app-core-features></app-core-features>
+    <pricing-modern></pricing-modern>
 
   </div>
 
 </div>
+
+

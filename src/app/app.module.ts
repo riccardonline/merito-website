@@ -39,7 +39,7 @@ const routerConfig: ExtraOptions = {
         LayoutModule,
 
         // 3rd party modules
-        MarkdownModule.forRoot({}),
+        // MarkdownModule.forRoot({}),
 
         ScullyLibModule
     ],
