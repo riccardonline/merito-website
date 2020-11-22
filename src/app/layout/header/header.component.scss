@@ -18,11 +18,11 @@ app-header {
       justify-content: space-between;
       align-items: center;
       flex: 1;
+      height: 100%;
 
       .navbar-logo {
-        width: 150px;
-        height: 50px;
-        background: blue;
+        width: 120px;
+        margin-left: 10px;
       }
 
       .navbar-right {
@@ -31,7 +31,8 @@ app-header {
         .navbar-menu {
           display: flex;
           align-items: center;
-          margin-right: 30px;
+          margin-right: 8vw;
+          font-weight: 500;
 
           .navbar-item {
             margin: 0 10px;
