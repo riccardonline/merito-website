@@ -20,11 +20,11 @@
             <h5>Whether you are an individual or a Fortune 500 enterprise, there is a plan that's right for you</h5>
 
             <div class="recurring-selector"
-                 [ngClass]="{'annual-billing' : annualBilling}">
-                <span (click)="annualBilling = false">Monthly</span>
-                <mat-slide-toggle [(ngModel)]="annualBilling"
+                 [ngClass]="{'annual-billing' : isMultipleUsersBilling}">
+                <span (click)="isMultipleUsersBilling = false">Monthly</span>
+                <mat-slide-toggle [(ngModel)]="isMultipleUsersBilling"
                                   [color]="'primary'"></mat-slide-toggle>
-                <span (click)="annualBilling = true">Annual</span>
+                <span (click)="isMultipleUsersBilling = true">Annual</span>
             </div>
 
         </div>
@@ -43,18 +43,18 @@
                 <div class="price">
                     <span class="currency">USD</span>
                     <span class="amount">
-                        <ng-container *ngIf="annualBilling">$6.00</ng-container>
-                        <ng-container *ngIf="!annualBilling">$9.00</ng-container>
+                        <ng-container *ngIf="isMultipleUsersBilling">$6.00</ng-container>
+                        <ng-container *ngIf="!isMultipleUsersBilling">$9.00</ng-container>
                     </span>
                 </div>
 
                 <div class="price-details">
-                    <ng-container *ngIf="annualBilling">
+                    <ng-container *ngIf="isMultipleUsersBilling">
                         <span>billed annually</span>
                         <span>or <b>$9.00</b> billed monthly</span>
                     </ng-container>
 
-                    <ng-container *ngIf="!annualBilling">
+                    <ng-container *ngIf="!isMultipleUsersBilling">
                         <span>billed monthly</span>
                         <span>or <b>$6.00</b> billed annually</span>
                     </ng-container>
@@ -112,18 +112,18 @@
                 <div class="price">
                     <span class="currency">USD</span>
                     <span class="amount">
-                        <ng-container *ngIf="annualBilling">$12.00</ng-container>
-                        <ng-container *ngIf="!annualBilling">$15.00</ng-container>
+                        <ng-container *ngIf="isMultipleUsersBilling">$12.00</ng-container>
+                        <ng-container *ngIf="!isMultipleUsersBilling">$15.00</ng-container>
                     </span>
                 </div>
 
                 <div class="price-details">
-                    <ng-container *ngIf="annualBilling">
+                    <ng-container *ngIf="isMultipleUsersBilling">
                         <span>billed annually</span>
                         <span>or <b>$15.00</b> billed monthly</span>
                     </ng-container>
 
-                    <ng-container *ngIf="!annualBilling">
+                    <ng-container *ngIf="!isMultipleUsersBilling">
                         <span>billed monthly</span>
                         <span>or <b>$12.00</b> billed annually</span>
                     </ng-container>
@@ -179,18 +179,18 @@
                 <div class="price">
                     <span class="currency">USD</span>
                     <span class="amount">
-                        <ng-container *ngIf="annualBilling">$49.00</ng-container>
-                        <ng-container *ngIf="!annualBilling">$69.00</ng-container>
+                        <ng-container *ngIf="isMultipleUsersBilling">$49.00</ng-container>
+                        <ng-container *ngIf="!isMultipleUsersBilling">$69.00</ng-container>
                     </span>
                 </div>
 
                 <div class="price-details">
-                    <ng-container *ngIf="annualBilling">
+                    <ng-container *ngIf="isMultipleUsersBilling">
                         <span>billed annually</span>
                         <span>or <b>$69.00</b> billed monthly</span>
                     </ng-container>
 
-                    <ng-container *ngIf="!annualBilling">
+                    <ng-container *ngIf="!isMultipleUsersBilling">
                         <span>billed monthly</span>
                         <span>or <b>$49.00</b> billed annually</span>
                     </ng-container>

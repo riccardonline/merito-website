@@ -1,6 +1,6 @@
-@import 'treo';
+@import 'src/@treo/styles/treo';
 
-pricing-modern {
+app-pricing {
     display: flex;
 
     .content-layout {
@@ -337,7 +337,7 @@ pricing-modern {
     $accent: map-get($theme, accent);
     $is-dark: map-get($theme, is-dark);
 
-    pricing-modern {
+    app-pricing {
 
         .background {
 
