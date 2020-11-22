@@ -9,12 +9,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { TreoCardModule } from '../../../@treo/components/card';
 import { CoreFeaturesComponent } from './core-features/core-features.component';
+import { PricingSingleComponent } from './pricing/pricing-single/pricing-single.component';
+import { FaqComponent } from './faq/faq.component';
+import { PricingMultipleComponent } from './pricing/pricing-multiple/pricing-multiple.component';
 
 @NgModule({
   declarations: [
     LandingHomeComponent,
     PricingComponent,
-    CoreFeaturesComponent
+    PricingSingleComponent,
+    CoreFeaturesComponent,
+    FaqComponent,
+    PricingMultipleComponent
   ],
   imports: [
     RouterModule.forChild(landingHomeRoutes),
@@ -22,7 +28,7 @@ import { CoreFeaturesComponent } from './core-features/core-features.component';
     SharedModule,
     MatIconModule,
     MatSlideToggleModule,
-    TreoCardModule
+    TreoCardModule,
   ]
 })
 export class LandingHomeModule {
