@@ -29,16 +29,12 @@ const routerConfig: ExtraOptions = {
     // Treo & Treo Mock API
     TreoModule,
     TreoConfigModule.forRoot(appConfig),
-    // TreoMockApiModule.forRoot(mockDataServices),
 
     // Core
     CoreModule,
 
     // Layout
     LayoutModule,
-
-    // 3rd party modules
-    // MarkdownModule.forRoot({}),
 
     ScullyLibModule
   ],

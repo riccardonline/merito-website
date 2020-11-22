@@ -12,6 +12,10 @@ import { CoreFeaturesComponent } from './core-features/core-features.component';
 import { PricingSingleComponent } from './pricing/pricing-single/pricing-single.component';
 import { FaqComponent } from './faq/faq.component';
 import { PricingMultipleComponent } from './pricing/pricing-multiple/pricing-multiple.component';
+import { HeroComponent } from './hero/hero.component';
+import { HomeCtaComponent } from './home-cta/home-cta.component';
+import { HeaderComponent } from '../../layout/header/header.component';
+import { FooterComponent } from '../../layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { PricingMultipleComponent } from './pricing/pricing-multiple/pricing-mul
     PricingSingleComponent,
     CoreFeaturesComponent,
     FaqComponent,
-    PricingMultipleComponent
+    PricingMultipleComponent,
+    HeroComponent,
+    HomeCtaComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forChild(landingHomeRoutes),

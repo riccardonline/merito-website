@@ -4,6 +4,7 @@ import { EmptyLayoutModule } from 'app/layout/layouts/empty/empty.module';
 import { SharedModule } from 'app/shared/shared.module';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 const modules = [
@@ -13,8 +14,7 @@ const modules = [
 
 @NgModule({
   declarations: [
-    LayoutComponent,
-    FooterComponent
+    LayoutComponent
   ],
   imports: [
     SharedModule,
