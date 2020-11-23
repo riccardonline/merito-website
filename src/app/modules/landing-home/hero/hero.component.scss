@@ -3,16 +3,17 @@
 .hero-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0 40px 8vw;
+  padding: 40px 0 40px 10vw;
   background-color: #f7f7fc;
 
   .hero__text {
     width: 40%;
-    max-width: 350px;
+    max-width: 400px;
+    padding: 40px 30px 0 0;
 
     h1.hero__text__title {
       font-size: 48px;
-      margin: 4vw 0 40px;
+      margin: 15px 0 40px;
       font-weight: 700;
     }
 
@@ -28,7 +29,10 @@
   }
 
   .hero__image {
-    height: 100%;
-    width: 60%;
+
+    img {
+      height: 400px;
+      width: auto;
+    }
   }
 }
