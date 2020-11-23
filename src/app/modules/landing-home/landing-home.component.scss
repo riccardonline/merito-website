@@ -6,15 +6,24 @@
   flex: 1 1 auto;
   min-width: 0;
 
-  > .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
+  > .content-layout {
+    position: relative;
+    padding: 32px;
+    align-items: center;
+    overflow: hidden;
 
-    > *:not(router-outlet) {
-      position: relative;
+    .content {
       display: flex;
+      flex-direction: column;
       flex: 1 1 auto;
+
+      > *:not(router-outlet) {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+      }
     }
   }
+
+
 }
