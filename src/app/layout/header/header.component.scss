@@ -10,7 +10,6 @@ app-header {
     height: 64px;
     max-height: 64px;
     min-height: 64px;
-    //padding: 0 50px;
     z-index: 49;
 
     .navbar {
@@ -31,8 +30,12 @@ app-header {
         .navbar-menu {
           display: flex;
           align-items: center;
-          margin-right: 8vw;
+          margin-right: 4vw;
           font-weight: 500;
+
+          @include treo-breakpoint('xs') {
+            display: none;
+          }
 
           .navbar-item {
             margin: 0 10px;
@@ -51,9 +54,9 @@ app-header {
       }
     }
 
-    @include treo-breakpoint('lt-md') {
-      padding: 0 16px;
-    }
+    //@include treo-breakpoint('lt-md') {
+    //  padding: 0 16px;
+    //}
   }
 }
 

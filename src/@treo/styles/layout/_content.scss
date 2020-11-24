@@ -2,6 +2,30 @@
 // @ Common
 // -----------------------------------------------------------------------------------------------------
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include treo-breakpoint('xs') {
+        max-width: 540px;
+    }
+
+    @include treo-breakpoint('sm') {
+        max-width: 720px;
+    }
+
+    @include treo-breakpoint('md') {
+        max-width: 960px;
+    }
+
+    @include treo-breakpoint('gt-md') {
+        max-width: 1200px;
+    }
+}
+
 // Header
 %content-layout-header {
     display: flex;
