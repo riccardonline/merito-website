@@ -4,5 +4,6 @@ export const config: ScullyConfig = {
   projectName: "merito",
   outDir: './dist/static',
   routes: {
-  }
+  },
+  puppeteerLaunchOptions: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
 };
