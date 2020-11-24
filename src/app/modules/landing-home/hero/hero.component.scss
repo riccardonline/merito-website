@@ -1,38 +1,44 @@
 @import 'src/@treo/styles/treo';
 
-.hero-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 0 40px 10vw;
-  background-color: #f7f7fc;
+app-hero {
+  .hero__wrapper {
+    background-color: #f7f7fc;
+    padding: 40px 0;
 
-  .hero__text {
-    width: 40%;
-    max-width: 400px;
-    padding: 40px 30px 0 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
 
-    h1.hero__text__title {
-      font-size: 48px;
-      margin: 15px 0 40px;
-      font-weight: 700;
-    }
+      .hero__text {
+        width: 40%;
+        max-width: 400px;
+        padding: 40px 30px 0 0;
 
-    .hero__text__description {
-      margin-bottom: 30px;
-      font-size: 16px;
-      color: treo-color('cool-gray', 500);
-    }
+        h1.hero__text__title {
+          font-size: 48px;
+          margin: 15px 0 40px;
+          font-weight: 700;
+        }
 
-    button {
-      margin-right: 10px;
+        .hero__text__description {
+          margin-bottom: 30px;
+          font-size: 16px;
+          color: treo-color('cool-gray', 500);
+        }
+
+        button {
+          margin-right: 10px;
+        }
+      }
+
+      .hero__image {
+
+        img {
+          height: 400px;
+          width: auto;
+        }
+      }
     }
   }
 
-  .hero__image {
-
-    img {
-      height: 400px;
-      width: auto;
-    }
-  }
 }

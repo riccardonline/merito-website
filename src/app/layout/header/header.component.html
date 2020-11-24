@@ -1,42 +1,47 @@
 <div class="header">
 
-  <nav class="navbar">
+  <div class="container">
 
-    <!--Logo-->
-    <a class="navbar-logo" [routerLink]="['/']">
-      <img src="/assets/images/logo/Logo_Transparent.png" alt="Merito logo">
-    </a>
+    <nav class="navbar">
 
-    <div class="navbar-right">
+      <!--Logo-->
+      <a class="navbar-logo" [routerLink]="['/']">
+        <img src="/assets/images/logo/Logo_Transparent.png" alt="Merito logo">
+      </a>
 
-      <!--Menu-->
-      <div class="navbar-menu">
+      <div class="navbar-right">
 
-        <div class="navbar-item">
-          <a href="">Features</a>
+        <!--Menu-->
+        <div class="navbar-menu">
+
+          <div class="navbar-item">
+            <a href="">Features</a>
+          </div>
+
+          <div class="navbar-item">
+            <a href="">Pricing</a>
+          </div>
+
+          <div class="navbar-item">
+            <a href="">About us</a>
+          </div>
+
         </div>
 
-        <div class="navbar-item">
-          <a href="">Pricing</a>
-        </div>
+        <!--Login-->
+        <div class="navbar-end">
 
-        <div class="navbar-item">
-          <a href="">About us</a>
+          <div class="login-button">Login</div>
+
+          <button mat-raised-button [color]="'primary'" class="demo-button">Request demo</button>
+
         </div>
 
       </div>
 
-      <!--Login-->
-      <div class="navbar-end">
+    </nav>
 
-        <div class="login-button">Login</div>
-
-        <button mat-raised-button [color]="'primary'" class="demo-button">Request demo</button>
-
-      </div>
-
-    </div>
-
-  </nav>
+  </div>
 
 </div>
+

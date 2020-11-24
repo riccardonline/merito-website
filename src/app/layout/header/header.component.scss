@@ -1,7 +1,7 @@
 @import 'src/@treo/styles/treo';
 
 app-header {
-  > .header {
+  .header {
     position: relative;
     display: flex;
     flex: 1 1 auto;
@@ -10,7 +10,7 @@ app-header {
     height: 64px;
     max-height: 64px;
     min-height: 64px;
-    padding: 0 5vw 0 8vw;
+    //padding: 0 50px;
     z-index: 49;
 
     .navbar {

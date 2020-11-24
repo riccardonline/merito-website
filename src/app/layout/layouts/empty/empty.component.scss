@@ -7,7 +7,7 @@ empty-layout {
     width: 100%;
 
     // Container
-    > .container {
+    > .empty-layout__container {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
