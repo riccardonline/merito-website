@@ -16,7 +16,10 @@ module.exports = {
     },
 
     // PurgeCSS
-    purge: false,
+    purge: {
+        enabled: true,
+        content: ['./src/**/*.html', './src/**/*.ts'],
+    },
 
     // Options
     important: true,
