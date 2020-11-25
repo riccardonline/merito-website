@@ -9,6 +9,7 @@
     "build": "ng build --prod",
     "build:prod": "ng build --prod && npm run scully",
     "build:prod:mem": "node --max_old_space_size=6144 ./node_modules/@angular/cli/bin/ng build --prod",
+    "build:github-pages": "ng build --prod --base-href https://riccardonline.github.io/merito-website/  ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
