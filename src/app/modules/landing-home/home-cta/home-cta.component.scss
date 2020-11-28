@@ -24,6 +24,10 @@ app-home-cta  {
       max-width: 500px;
       text-align: center;
       margin: 20px 0 30px;
+
+      @include treo-breakpoint('xs') {
+        font-size: 27px;
+      }
     }
 
     .home-cta__button {

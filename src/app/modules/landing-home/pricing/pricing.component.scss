@@ -50,6 +50,10 @@ app-pricing {
           max-width: 600px;
           text-align: center;
           margin: 0;
+
+          @include treo-breakpoint('xs') {
+            font-size: 27px;
+          }
         }
 
         h5 {

@@ -11,4 +11,13 @@ export class HeroComponent {
 
   constructor() {
   }
+
+  // tslint:disable-next-line:typedef
+  onPricesButtonClick() {
+    const element = document.getElementById('pricing');
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
