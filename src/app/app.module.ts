@@ -14,7 +14,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 const routerConfig: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
   preloadingStrategy: PreloadAllModules,
-  relativeLinkResolution: 'legacy'
+  relativeLinkResolution: 'legacy',
+  anchorScrolling: 'enabled'
 };
 
 @NgModule({
