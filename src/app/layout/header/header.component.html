@@ -15,15 +15,15 @@
         <div class="navbar-menu">
 
           <div class="navbar-item">
-            <a [routerLink]="['/']" fragment="features">Come funziona</a>
+            <a (click)="onLinkClick('features')">Come funziona</a>
           </div>
 
           <div class="navbar-item">
-            <a  [routerLink]="['/']" fragment="pricing">Prezzi</a>
+            <a  (click)="onLinkClick('pricing')">Prezzi</a>
           </div>
 
           <div class="navbar-item">
-            <a  [routerLink]="['/']" fragment="faq">Chi siamo</a>
+            <a  (click)="onLinkClick('faq')">Chi siamo</a>
           </div>
 
         </div>
