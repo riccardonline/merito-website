@@ -18,9 +18,7 @@
     "tw:build": "./node_modules/.bin/tailwind build src/tailwind/main.css -c src/tailwind/config.js -o src/styles/tailwind.scss",
     "tw:export": "npm run tw:export:js && npm run tw:export:scss",
     "tw:export:js": "node src/@treo/tailwind/export.js -c src/tailwind/config.js -o src/@treo/tailwind/exported/variables.ts",
-    "tw:export:scss": "./node_modules/.bin/tailwind build src/@treo/tailwind/export.css -c src/tailwind/config.js -o src/@treo/tailwind/exported/_variables.scss",
-    "scully": "scully",
-    "scully:serve": "scully serve"
+    "tw:export:scss": "./node_modules/.bin/tailwind build src/@treo/tailwind/export.css -c src/tailwind/config.js -o src/@treo/tailwind/exported/_variables.scss"
   },
   "private": true,
   "dependencies": {
@@ -43,9 +41,6 @@
     "@fullcalendar/moment": "4.4.2",
     "@fullcalendar/rrule": "4.4.2",
     "@fullcalendar/timegrid": "4.4.2",
-    "@scullyio/init": "^1.0.1",
-    "@scullyio/ng-lib": "^1.0.0",
-    "@scullyio/scully": "^1.0.0",
     "apexcharts": "3.22.2",
     "cors": "^2.8.5",
     "crypto-js": "3.3.0",
