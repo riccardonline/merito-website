@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +9,7 @@ import { ViewportScroller } from '@angular/common';
 })
 export class HeaderComponent {
 
-  constructor(private viewportScroller: ViewportScroller) {
+  constructor() {
   }
 
   onLinkClick(elementId: string): void {
