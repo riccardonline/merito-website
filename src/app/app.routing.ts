@@ -1,6 +1,5 @@
 import { Route } from '@angular/router';
 import { LayoutComponent } from 'app/layout/layout.component';
-import { AppComponent } from './app.component';
 
 // @formatter:off
 // tslint:disable:max-line-length
