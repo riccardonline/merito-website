@@ -140,13 +140,17 @@ app-pricing-single {
           font-weight: 500;
         }
 
-        .cta-button {
-          min-width: 128px;
-          width: 100%;
+        a {
           margin-top: auto;
 
-          @include treo-breakpoint('lt-lg') {
-            margin-top: 32px;
+          .cta-button {
+            min-width: 128px;
+            width: 100%;
+            margin-top: auto;
+
+            @include treo-breakpoint('lt-lg') {
+              margin-top: 32px;
+            }
           }
         }
       }
