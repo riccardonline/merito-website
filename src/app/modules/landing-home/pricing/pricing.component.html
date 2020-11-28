@@ -16,15 +16,15 @@
     <!-- Header -->
     <div class="header">
 
-      <h1>Simple pricing that scales with your business</h1>
-      <h5>Whether you are an individual or a Fortune 500 enterprise, there is a plan that's right for you</h5>
+      <h1>I nostri prezzi sono trasparenti e garantiti</h1>
+      <h5>Offriamo pacchetti tutto incluso per aziende con un solo dipendente ed aziende con due o più dipendenti.</h5>
 
       <div class="recurring-selector"
            [ngClass]="{'annual-billing' : isMultipleUsersBilling}">
-        <span (click)="isMultipleUsersBilling = false">Single</span>
+        <span (click)="isMultipleUsersBilling = false">Un dipendente</span>
         <mat-slide-toggle [(ngModel)]="isMultipleUsersBilling"
                           [color]="'primary'"></mat-slide-toggle>
-        <span (click)="isMultipleUsersBilling = true">Multiple</span>
+        <span (click)="isMultipleUsersBilling = true">Più dipendenti</span>
       </div>
 
     </div>
