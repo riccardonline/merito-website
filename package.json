@@ -2,7 +2,7 @@
   "name": "merito",
   "version": "1.1.0",
   "license": "https://themeforest.net/licenses/standard",
-  "homepage": "http://www.getmerito.com",
+  "homepage": "http://merito.me",
   "scripts": {
     "ng": "ng",
     "start": "node server",
