@@ -18,7 +18,8 @@
     "tw:build": "./node_modules/.bin/tailwind build src/tailwind/main.css -c src/tailwind/config.js -o src/styles/tailwind.scss",
     "tw:export": "npm run tw:export:js && npm run tw:export:scss",
     "tw:export:js": "node src/@treo/tailwind/export.js -c src/tailwind/config.js -o src/@treo/tailwind/exported/variables.ts",
-    "tw:export:scss": "./node_modules/.bin/tailwind build src/@treo/tailwind/export.css -c src/tailwind/config.js -o src/@treo/tailwind/exported/_variables.scss"
+    "tw:export:scss": "./node_modules/.bin/tailwind build src/@treo/tailwind/export.css -c src/tailwind/config.js -o src/@treo/tailwind/exported/_variables.scss",
+    "deploy-gh":"angular-cli-ghpages — dir=docs/"
   },
   "private": true,
   "dependencies": {
