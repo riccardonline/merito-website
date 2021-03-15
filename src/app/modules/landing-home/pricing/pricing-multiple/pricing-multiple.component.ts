@@ -8,7 +8,12 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   encapsulation: ViewEncapsulation.None
 })
 export class PricingMultipleComponent {
-
+  web=false;
+  mobile=true;
+  onResize(event) {
+    this.web = document.body.clientWidth<=768?true:false
+    this.mobile = document.body.clientWidth>=768?true:false
+  }
   constructor() {
   }
 }
