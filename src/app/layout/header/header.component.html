@@ -19,11 +19,11 @@
           </div>
 
           <div class="navbar-item">
-            <a  (click)="onLinkClick('pricing')">Prezzi</a>
+            <a (click)="onLinkClick('pricing')">Prezzi</a>
           </div>
 
           <div class="navbar-item">
-            <a  (click)="onLinkClick('faq')">Chi siamo</a>
+            <a (click)="onLinkClick('faq')">Chi siamo</a>
           </div>
 
         </div>
@@ -33,8 +33,10 @@
 
           <a href="https://app.merito.so" class="login-button">Login</a>
 
-          <a (window:resize)="onResize($event)" [hidden]="mobile" href="http://calendly.com/paghe/informazioni"><button mat-raised-button [color]="'primary'" class="demo-button">Contattaci</button></a>
-          <a (window:resize)="onResize($event)" [hidden]="web" href="http://app.merito.so/welcome"><button mat-raised-button [color]="'primary'" class="demo-button">Contattaci</button></a>
+          <a (window:resize)="onResize($event)" [hidden]="mobile" href="http://calendly.com/paghe/informazioni"><button
+              mat-raised-button [color]="'primary'" class="demo-button">Contattaci</button></a>
+          <a (window:resize)="onResize($event)" [hidden]="web" href="http://app.merito.so/register_demo"><button
+              mat-raised-button [color]="'primary'" class="demo-button">Contattaci</button></a>
 
         </div>
 
@@ -45,4 +47,3 @@
   </div>
 
 </div>
-
